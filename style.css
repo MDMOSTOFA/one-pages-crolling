@@ -1,92 +1,135 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+	text-align: center;
 }
-.menu {
-    width: 60px;
-    height: 400px;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    position: absolute;
-    right: 8%;
-    top: 32%;
-}
+
+
+
 .light-menu {
     width: 100%;
     height: 75px;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
-    background-color:rgba(4, 180, 49, 0.6);
+    background-color: rgba(4, 180, 49, 0.6);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
 #menu-center {
     text-align: right;
     margin: 0 auto;
-	    position: fixed
+    position: fixed
 }
+
 #menu-center ul {
     margin: 0 0 0 0;
 }
-#menu-center ul li a{
 
-}
+#menu-center ul li a {}
+
 #menu-center ul li {
     margin: 0;
     display: block;
-
 }
-.active, #menu-center ul li a:hover  {
 
+.active,
+#menu-center ul li a:hover {}
 
-
-}
 a {
-    font-family:'Droid Sans', serif;
+    font-family: 'Droid Sans', serif;
     font-size: 14px;
     color: black;
     text-decoration: none;
     line-height: 35px;
 }
-#home {
-    background-color: #286090;
-    height: 100vh;
+
+#intro {
+    background-color: #fff;
+    height: 700px;
     width: 100%;
     overflow: hidden;
+    color: red;
 }
+
 #portfolio {
-    background: gray; 
-    height: 100vh;
+    background: gray;
+    height: 200px;
     width: 100%;
 }
+
 #about {
-    background-color: blue;
-    height: 100vh;
+    background-color: rgba(76, 175, 80, 0.83);
+    height: 300px;
+    width: 100%;
+    color: #000;
+}
+
+
+#services {
+    background-color: rgba(33, 150, 243, 0.76);
+    height: 650px;
     width: 100%;
 }
 #contact {
-    background-color: rgb(154, 45, 45);
-    height: 100vh;
+    background-color: #ccc;
+    height: 550px;
     width: 100%;
 }
+
+#contactus {
+background-color: #080808;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+}
+
 ul li a span.ahide {
     opacity: 0;
-	color: #8999D0;
+    color: #8999D0;
 }
- ul li a:hover{
-	 text-decoration: none;
- }
-ul li a.active span.ahide, ul li:hover a span.ahide {
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li.active a span.ahide,
+ul li:hover a span.ahide {
     opacity: 1;
-	color: #8999D0;
-	text-decoration: none;
+    color: green;
+    text-decoration: none;
 }
-a.active span svg circle, ul li:hover a span svg circle {
-fill: red;
+
+li.active a span svg circle,
+ul li:hover a span svg circle {
+    fill: red;
+}
+
+
+
+.active, #menu-center ul li a:hover {
+    background: transparent;
+}
+.navbar.navbar-scroll.nav_hide {
+    background: none;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+}
+
+
+
+.menu {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: absolute;
+    right: 0%;
+	margin-top: 13%;
 }
