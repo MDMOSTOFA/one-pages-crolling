@@ -109,7 +109,10 @@ li.active a span svg circle,
 ul li:hover a span svg circle {
     fill: red;
 }
-
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
 
 
 .active, #menu-center ul li a:hover {
